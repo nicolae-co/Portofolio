@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React, {useState} from "react";
+import 'bootstrap/dist/css/bootstrap.css';
+import Navigation from "./componets/Navigation";
+import Content from "./componets/Content";
+import Footer from "./componets/Footer";
+import Logo from "./componets/Logo";
+
+import './styles/App.css'
+
+import ThemeContext, {themes} from "./Themes";
+
+
+
+
+
 
 function App() {
+  const [theme, setTheme] = useState(themes.dark)
+  const toggleTheme = ()=>
+    theme === themes.dark 
+      ? setTheme(themes.light)
+      : setTheme(themes.dark)
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContext.Provider value={theme}>
+      <div className="navigation row ">
+        <Logo />
+        <Navigation />
+        <div style={theme} className="col-2 theme">
+        <button style={theme} className="theme-btn" onClick={toggleTheme}>Toggle theme</button>
+        </div>
+        
+      </div>
+      <Content />
+      <Footer />
+      
+    </ThemeContext.Provider>
   );
 }
 

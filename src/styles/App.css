@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap');
+
+@import './Navigation.css';
+@import './Buttons.css';
+@import './Content.css';
+@import './Footer.css';
+
+
+*, *::before, *::after{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 25px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fca311;
+}
+

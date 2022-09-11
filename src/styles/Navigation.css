@@ -1,0 +1,41 @@
+
+.navigation{
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.navigation--btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 930px){
+    .logo{
+        display: none;
+    }
+    .theme{
+        display: none;
+    }
+    .navigation--btns{
+        width: 100vw
+    }
+}
