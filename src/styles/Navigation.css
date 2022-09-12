@@ -29,7 +29,7 @@ a, a.nav--comment{
 }
 
 .navigation--btns--background{
-    background-color: #e07a5f;
+    background-color: #5457B8;
     width: auto;
     height: 82px;
     border-radius: 40px;
@@ -42,50 +42,7 @@ a, a.nav--comment{
 
 
 
-.nav--btn {
-    margin: 16px 8px;
-    border-radius: 25px;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    box-shadow: 0 6px 8px black, inset 0 2px 4px grey;
-    
-    
-    transition: all 0.5s ease-in-out;
-}
 
-.nav--btn{
-    text-decoration: none;
-}
-.nav--btn:first-child{
-    margin-left: 16px;
-}
-.nav--btn:last-child{
-    margin-right: 16px;
-}
-
-
-.nav--btn .nav--comment{
-    display: none;
-}
-.nav--btn:hover .nav--icon{
-    display: none;
-}
-.nav--btn:hover .nav--comment{
-    display: inline;
-    color: black;
-    
-    
-    
-}
-.nav--btn:hover{
-    width: max-content;
-    height: 50px;
-    background-color: lightgray;
-}
 
 .theme{
     display: flex;
@@ -105,3 +62,5 @@ a, a.nav--comment{
         width: 100vw
     }
 }
+
+

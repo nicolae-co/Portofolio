@@ -14,17 +14,17 @@ export default function Content() {
       </div>
 
       <div style={style} className='content--projects row' id='content--projects'>
-        <div style={style} className='content--project col-8 offset-2'>
-          <div className='content--project--description'>Description</div>
-          <div className='content--project--site'>Site</div>
+        <div  className='content--project col-8 offset-2'>
+          <div style={style} className='content--project--description'>Description</div>
+          <div style={style} className='content--project--site'>Site</div>
         </div>
         <div className='content--project col-8 offset-2'>
-          <div className='content--project--description'>Description</div>
-          <div className='content--project--site'>Site</div>
+          <div style={style} className='content--project--description'>Description</div>
+          <div style={style} className='content--project--site'>Site</div>
         </div>
         <div className='content--project col-8 offset-2'>
-          <div className='content--project--description'>Description</div>
-          <div className='content--project--site'>Site</div>
+          <div style={style} className='content--project--description'>Description</div>
+          <div style={style} className='content--project--site'>Site</div>
         </div>
       </div>
     </>

@@ -1,3 +1,67 @@
+
+/* Theme Button */
+
 .theme-btn{
     border: none;
 }
+
+
+
+/* Navigation Buttons */
+
+.nav--btn,
+.footer--btn{
+    margin: 16px 8px;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 6px 8px black, inset 0 2px 4px grey;
+    
+    
+    transition: all 0.5s ease-in-out;
+}
+
+.nav--btn{
+    text-decoration: none;
+}
+.nav--btn:first-child{
+    margin-left: 16px;
+}
+.nav--btn:last-child{
+    margin-right: 16px;
+}
+
+.nav--icon,
+.footer--icon{
+    color: #F62DAE;
+}
+
+.nav--btn .nav--comment,
+.footer--btn .footer--comment{
+    display: none;
+}
+.nav--btn:hover .nav--icon,
+.footer--btn:hover .footer--icon{
+    display: none;
+}
+.nav--btn:hover .nav--comment,
+.footer--btn:hover .footer--comment{
+    display: inline;
+    color: #F62DAE;
+    font-weight: 600;
+    padding: 0 8px;
+    
+    
+    
+}
+.nav--btn:hover,
+.footer--btn:hover{
+    width: max-content;
+    height: 50px;
+    background-color: lightgray;
+}
+
